@@ -1,0 +1,34 @@
+1. Always activate virtual env
+   -python -m venv [filename] -> to create
+   -source [filename]/bin/activate -> to activate virtual env every time
+
+2. Test the Development Environment
+    -export FLASK_APP=[filename].py
+    -For this application, FLASK_APP=application.py
+
+3. To run FLASK_APP
+    -flask run
+
+---- To Run Website Server ----
+-python [filename].py runserver
+
+----- To Check Versions ----
+1. python
+    -python --versions
+
+2. Sqlalchemy
+    -pip show flask_qlalchemy
+
+
+To push the application context 
+in a Flask application on macOS
+    -from application import app
+    -app.app_context().push()
+
+
+--- Database using SQLite (Sqlalchemy) -----
+make sure to type: python first
+to add something to db: db.session.add([name_of_the_item#n])
+to commit the add/drop: db.session.commit()
+to query all: [column_name].query.all()
+to exit database: exit()
